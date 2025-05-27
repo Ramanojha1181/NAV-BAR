@@ -1,0 +1,188 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+    background-color: rgb(4, 4, 76);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.left {
+    font-size: larger;
+}
+
+.right {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: x-large;
+    height: 60px;
+    background-color: rgb(9, 9, 86);
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-size: large;
+}
+
+nav ul li {
+    margin: 0px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(131, 131, 236);
+    font-size: 1.2rem;
+}
+
+main {
+    justify-content: space-around;
+    display: flex;
+    margin-top: 90px;
+}
+
+main name {
+    color: rgb(100, 242, 68);
+}
+
+main skill {
+    color: #ebeb6b;
+}
+
+main img {
+    height: 350px;
+    border-radius: 5px;
+}
+main img{
+    box-sizing: 2px 2px 2px 2px ;
+    box-shadow: azure;
+    color: red;
+}
+.leftsection {
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+hr {
+    margin-top: 120px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#element{
+    color: #ebeb6b;
+}
+footer{
+    justify-content: space-around;
+    display: flex;
+    margin-top: 50px;
+}
+.space{
+    height: 5rem;
+} 
+.leftpart ul a{
+    text-decoration: none;
+    color:white;
+}
+footer ul li:hover{
+    font-size: 1.1rem;
+    color: rgb(128, 128, 232);
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Raman's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contect me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section class="leftsection">Hello, It's Me <br>
+            <name>Raman Ojha </name><br>And I'm a <br>
+            <span id="element"></span>
+            <!-- <div> <input type="file"> </div> -->
+        </section>
+        <section class="rightsection"> <img src="Screenshot 2025-02-24 205500.png" alt=" Imag Does Not Appear">
+        </section>
+    </main>
+    <hr>
+    <footer>
+
+        <div class="leftpart">
+            <ul>
+                <h1>Beginner Level</h1>
+                <li>Personal Portfolio Website</li>
+                <a href="http://127.0.0.1:5500/index.html">
+                    <li> To-Do List App</li>
+                </a>
+                <li>Weather App</li>
+                <li>Basic Calculator</li>
+                <li>Quote Generator</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+        <div class="midpart">
+            <ul>
+                <h1>Intermediate Level</h1>
+                <li>Chat Application</li>
+                <li>E-commerce Website</li>
+                <li>Recipe App</li>
+                <li>Music Player</li>
+                <li>Weather Dashboard</li>
+                <li>Tic Tac Toe Game</li>
+            </ul>
+        </div>
+        <div class="rightpart">
+            <ul>
+                <h1>Advanced Level</h1>
+                <li>Fitness Tracker</li>
+                <li>Social Media Dashboard</li>
+                <li> Real Estate Listings</li>
+                <li>Stock Market Dashboard</li>
+                <li>Job Board</li>
+                <li>Travel Planner</li>
+            </ul>
+        </div>
+    </footer>
+    <div class="space"></div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Frontend Developer</i> ', '&amp; A Software Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
